@@ -5,11 +5,11 @@ namespace WooingApi.Extensions;
 
 public static class ApplicationServiceExtension
 {
-    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
     {
         //Add DBContext
-        
-        services.AddDbContext<DataContext>(options=>options.UseSqlite());
+        var connectionString = config.GetConnectionString("WooingSqliteDB");
+        services.AddDbContext<DataContext>(options=>options.UseSqlite(connectionString));
 
         return services;
     }

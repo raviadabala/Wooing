@@ -1,0 +1,4 @@
+
+dotnet tool update --global dotnet-ef            ----Update ef tool version
+dotnet ef migrations add user-created            ----Migration creation
+dotnet ef database update                        ----To update the database with migration
