@@ -1,4 +1,13 @@
 
+Entity Framework
+-----------------
 dotnet tool update --global dotnet-ef            ----Update ef tool version
 dotnet ef migrations add user-created            ----Migration creation
-dotnet ef database update                        ----To update the database with migration
+dotnet ef database update                        ----To create/update the database with migration
+
+Anguler
+-------
+
+ng --version        (Angular version)
+npm --version       (node package manager) To install packages in angular
+node --version      cls
