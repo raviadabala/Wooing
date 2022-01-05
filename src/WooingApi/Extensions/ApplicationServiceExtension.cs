@@ -10,6 +10,8 @@ public static class ApplicationServiceExtension
         //Add DBContext
         var connectionString = config.GetConnectionString("WooingSqliteDB");
         services.AddDbContext<DataContext>(options=>options.UseSqlite(connectionString));
+        //Automapper
+        services.AddAutoMapper(typeof(Profiles.WooingProfiles));
 
         return services;
     }
