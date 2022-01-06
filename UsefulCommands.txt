@@ -11,3 +11,7 @@ Anguler
 ng --version        (Angular version)
 npm --version       (node package manager) To install packages in angular
 node --version      cls
+
+ng g -h
+ng g c nav --skip-tests     ---Generate new component
+npm install bootswatch      ---To install bootswatch for themes
